@@ -8,7 +8,7 @@ body:
       value: |
         Good proposals start from a concrete problem, sketch the API, and weigh the trade-offs. For open-ended ideas, start in [Discussions](https://github.com/soketlabs/loop/discussions) first.
 
-        Changes to public traits, the session format, tool approval, or sandboxing are reviewed against the [security and sandboxing invariants](https://github.com/soketlabs/loop/blob/main/CONTRIBUTING.md#security-and-sandboxing-invariants).
+        Changes to public traits, the session format, tool approval, or sandboxing are reviewed against the [security and sandboxing invariants](https://github.com/soketlabs/loop/blob/main/.github/CONTRIBUTING.md#security-and-sandboxing-invariants).
 
   - type: checkboxes
     id: preflight
