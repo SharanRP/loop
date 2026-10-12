@@ -24,7 +24,7 @@ On first start, Loop asks you to **connect a model provider** (unless a provider
 
 | Provider | `/login` | Env var |
 |---|---|---|
-| Soket | `/login soket` | `SOKET_API_KEY` / `TENSORSTUDIO_API_KEY` / `LOOP_API_KEY` |
+| Soket | `/login soket` | `SOKET_API_KEY` |
 | OpenRouter | `/login openrouter` | `OPENROUTER_API_KEY` |
 | OpenAI | `/login openai` | `OPENAI_API_KEY` |
 | Any OpenAI-compatible API (Together, Groq, vLLM, Ollama, LM Studio, …) | `/login custom` (name, base URL, optional key) | — |

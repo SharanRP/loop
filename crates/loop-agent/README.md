@@ -64,11 +64,18 @@ A future `remote` kind is reserved but not implemented.
 ## Live tests
 
 ```bash
+export SOKET_API_KEY="your-key"
 LOOP_TEST_BASE_URL="https://api.soket.ai/v1" \
 LOOP_TEST_MODEL="qwen3-30b" \
-LOOP_TEST_API_KEY_ENV="OPENAI_API_KEY" \
+LOOP_TEST_API_KEY_ENV="SOKET_API_KEY" \
 cargo test -p loop-agent --test live_agent -- --ignored --nocapture
 ```
+
+| Variable | Meaning |
+|---|---|
+| `LOOP_TEST_BASE_URL` | Base URL of any OpenAI-compatible API |
+| `LOOP_TEST_MODEL` | Model id on that API |
+| `LOOP_TEST_API_KEY_ENV` | The **name** of the environment variable that holds the key, not the key |
 
 Live tests stream model text to stderr and run **3 turns** each (tool loop + harness/SQLite).
 
